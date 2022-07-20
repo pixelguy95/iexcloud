@@ -372,9 +372,6 @@ type Quote struct {
 	LatestTime            string    `json:"latestTime,omitempty"`
 	LatestUpdate          EpochTime `json:"latestUpdate,omitempty"`
 	LatestVolume          int       `json:"latestVolume,omitempty"`
-	IEXRealtimePrice      float64   `json:"iexRealtimePrice,omitempty"`
-	IEXRealtimeSize       int       `json:"iexRealtimeSize,omitempty"`
-	IEXLastUpdated        EpochTime `json:"iexLastUpdated,omitempty"`
 	DelayedPrice          float64   `json:"delayedPrice,omitempty"`
 	DelayedPriceTime      EpochTime `json:"delayedPriceTime,omitempty"`
 	ExtendedPrice         float64   `json:"extendedPrice,omitempty"`
@@ -384,18 +381,25 @@ type Quote struct {
 	PreviousClose         float64   `json:"previousClose,omitempty"`
 	Change                float64   `json:"change,omitempty"`
 	ChangePercent         float64   `json:"changePercent,omitempty"`
-	IEXMarketPercent      float64   `json:"iexMarketPercent,omitempty"`
-	IEXVolume             int       `json:"iexVolume,omitempty"`
 	AvgTotalVolume        int       `json:"avgTotalVolume,omitempty"`
-	IEXBidPrice           float64   `json:"iexBidPrice,omitempty"`
-	IEXBidSize            int       `json:"iexBidSize,omitempty"`
-	IEXAskPrice           float64   `json:"iexAskPrice,omitempty"`
-	IEXAskSize            int       `json:"iexAskSize,omitempty"`
 	MarketCap             int       `json:"marketCap,omitempty"`
 	Week52High            float64   `json:"week52High,omitempty"`
 	Week52Low             float64   `json:"week52Low,omitempty"`
 	YTDChange             float64   `json:"ytdChange,omitempty"`
 	PERatio               float64   `json:"peRatio,omitempty"`
+	IEXMarketPercent      float64   `json:"iexMarketPercent,omitempty"`
+	IEXRealtimePrice      float64   `json:"iexRealtimePrice,omitempty"`
+	IEXRealtimeSize       int       `json:"iexRealtimeSize,omitempty"`
+	IEXLastUpdated        EpochTime `json:"iexLastUpdated,omitempty"`
+	IEXVolume             int       `json:"iexVolume,omitempty"`
+	IEXBidPrice           float64   `json:"iexBidPrice,omitempty"`
+	IEXBidSize            int       `json:"iexBidSize,omitempty"`
+	IEXAskPrice           float64   `json:"iexAskPrice,omitempty"`
+	IEXAskSize            int       `json:"iexAskSize,omitempty"`
+	IEXOpen               float64   `json:"iexOpen"`
+	IEXOpenTime           EpochTime `json:"iexOpenTime"`
+	IEXClose              float64   `json:"iexClose"`
+	IEXCloseTime          EpochTime `json:"iexCloseTime"`
 }
 
 // VenueVolume models the 15 minute delayed and 30 day average consolidated
