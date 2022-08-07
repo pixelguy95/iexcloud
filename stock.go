@@ -132,6 +132,9 @@ type Company struct {
 	Zip            string   `json:"zip"`
 	Country        string   `json:"country"`
 	Phone          string   `json:"phone"`
+	IexIndustry    string   `json:"iexIndustry"`
+	IexSector      string   `json:"iexSector"`
+	IexTags        []string `json:"iexTags"`
 }
 
 // DelayedQuote returns the 15 minute delayed market quote.
